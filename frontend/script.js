@@ -7,7 +7,7 @@ form.addEventListener("submit", async function (e) {
   const taskName = document.getElementById("taskName").value;
   const frequency = document.getElementById("frequency").value;
 
-  const response = await fetch("http://localhost:3000/add-task", {
+  const response = await fetch("https://todo-backend-lhel.onrender.com/add-task", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ taskName, frequency }),
@@ -32,7 +32,7 @@ form.addEventListener("submit", async function (e) {
 
 // Fetch all tasks and display them
 async function showData() {
-  const allTask = await fetch("http://localhost:3000/tasks");
+  const allTask = await fetch("https://todo-backend-lhel.onrender.com/tasks");
   const allTaskRes = await allTask.json();
   taskList.innerHTML = ""; // Clear current task list
   allTaskRes.map((task) => {
@@ -49,7 +49,7 @@ async function showData() {
 
 // Fetch all logs and display them
 async function showLogData() {
-  const allTask = await fetch("http://localhost:3000/logs");
+  const allTask = await fetch("https://todo-backend-lhel.onrender.com/logs");
   const allTaskRes = await allTask.json();
   taskLogs.innerHTML = ""; // Clear current logs
   allTaskRes.map((task) => {

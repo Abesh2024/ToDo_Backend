@@ -9,7 +9,13 @@ const app = express(); //done
 app.use(bodyParser.json()); //done
 
 const cors = require('cors');  //done
-app.use(cors());    //done
+const corsOptions = {
+    origin: ['http://127.0.0.1:5500', "https://todo-backend-lhel.onrender.com"], // Frontend URLs
+    credentials: true, // Allow credentials (cookies) to be included
+    optionsSuccessStatus: 200, // For legacy browser support
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allowed methods
+  };
+app.use(cors(corsOptions));    //done
 
 // Connect to MongoDB
 mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
