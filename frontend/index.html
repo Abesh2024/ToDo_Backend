@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Scheduler</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="container">
+    <h1>Task Scheduler</h1>
+    
+    <!-- Form to Add New Task -->
+    <h2>Add New Task</h2>
+    <form id="taskForm">
+      <label for="taskName">Task Name</label>
+      <input type="text" id="taskName" required>
+
+      <label for="frequency">Frequency</label>
+      <select id="frequency" required>
+        <option value="* * * * *">Every Minute</option>
+        <option value="0 * * * *">Hourly</option>
+        <option value="0 0 * * *">Daily</option>
+      </select>
+
+      <button type="submit">Schedule Task</button>
+    </form>
+
+    <!-- Task List -->
+    <h2>Task List</h2>
+    <table id="taskList">
+      <thead>
+        <tr>
+          <th>Task Name</th>
+          <th>Frequency</th>
+          <th>Next Execution</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dynamic Rows -->
+      </tbody>
+    </table>
+
+    <!-- Task Logs -->
+    <h2>Task Logs</h2>
+    <table id="taskLogs">
+      <thead>
+        <tr>
+          <th>Task Name</th>
+          <th>Execution Time</th>
+          <th>Status</th>
+          <th>Message</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dynamic Rows -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
