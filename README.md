@@ -4,6 +4,7 @@
 ![Screenshot 2024-09-12 224237](https://github.com/user-attachments/assets/f21e34df-ffc6-4f61-8429-edc491a2a5c6)
 
 ### Backend .env configurations below
+### Setup the mentioned bellow variables in your Backend .env file, and give the required fields like less secure password of your mail, port no etc.
 ```js
 PORT=...
 EMAIL_PORT=...
