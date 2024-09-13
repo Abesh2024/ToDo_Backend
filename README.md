@@ -1,8 +1,8 @@
 # ToDo app with node-cron scheduled tasks.
-*Hosted Link of the Project --  https://threads-clone-ebyp.vercel.app/*
+*Hosted Link of the Project --  *
 ## Some snippits of the project
-![Screenshot 2024-06-24 153435](file:///D:/OneDrive/Pictures/Screenshots/Screenshot%202024-09-12%20224237.png)
-![Screenshot 2024-06-24 165358](https://github.com/Abesh2024/Threads_Clone/assets/149151223/ad3fad14-9d90-417a-af1b-fec6bdc1fd61)
+![Screenshot 2024-09-12 224237](https://github.com/user-attachments/assets/f21e34df-ffc6-4f61-8429-edc491a2a5c6)
+
 ### Backend .env configurations below
 ```js
 PORT=...
