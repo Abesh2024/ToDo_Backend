@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 // CORS Setup with Explicit Headers
 const corsOptions = {
-    origin: ['https://to-do-backend-one.vercel.app/'], // Frontend URLs
+    origin: ['https://to-do-backend-one.vercel.app'], // Frontend URLs
     credentials: true, // Allow credentials (cookies) to be included
     optionsSuccessStatus: 200, // For legacy browser support
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allowed methods
