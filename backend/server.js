@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 // CORS Setup with Explicit Headers
 const corsOptions = {
-    origin: ['http://127.0.0.1:5500'], // Frontend URLs
+    origin: ['https://to-do-backend-one.vercel.app/'], // Frontend URLs
     credentials: true, // Allow credentials (cookies) to be included
     optionsSuccessStatus: 200, // For legacy browser support
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allowed methods
@@ -22,7 +22,7 @@ app.use(cors(corsOptions));
 
 // Middleware to explicitly set CORS headers (to handle custom issues)
 app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "http://127.0.0.1:5500");  // Allow specific origin
+    res.header("Access-Control-Allow-Origin", "https://to-do-backend-one.vercel.app/");  // Allow specific origin
     res.header("Access-Control-Allow-Credentials", "true"); // Allow credentials
     res.header("Access-Control-Allow-Methods", "GET,HEAD,PUT,PATCH,POST,DELETE");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
